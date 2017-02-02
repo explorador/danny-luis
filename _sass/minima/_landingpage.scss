@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/fonts/glacialindifference-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/glacialindifference-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/fonts/glacialindifference-italic-webfont.woff2') format('woff2'),
+         url('/assets/fonts/glacialindifference-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('/assets/fonts/glacialindifference-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/glacialindifference-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: #1f1f1f;
+
+	@media (max-width: $on-palm) {
+		height: auto;
+		min-height: 100%;
+	}
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(/assets/background.jpg);
+	background-position: calc(50% + 273px) 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    font-family: 'GlacialIndifference', sans-serif;
+    font-size: 21px;
+	color: #fff;
+
+	@media (max-width: $on-palm) {
+		display: block;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		background-size: 130% auto;
+		background-position: center top;
+	}
+}
+
+.inner-container {
+	max-width: 680px;
+}
+
+.site-title {
+	margin: 0 0 -20px;
+	overflow: hidden;
+
+	@media (max-width: $on-palm) {
+		margin: 85px 0 70px;
+	}
+
+	span {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -1000px;
+		text-indent: -1000px;
+	}
+}
+
+.page-content {
+	padding: 0 1.19047619em; //25/21
+	width: 1440px;
+
+	@media (max-width: 1440px) {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.black-box {
+	margin-bottom: 40px;
+	padding: 45px 35px;
+	background: rgba(#232323, 0.8);
+
+	@media (max-width: 1440px) {
+		padding: 35px 25px;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.btn {
+	transition: all ease 0.2s;
+	display: inline-block;
+	margin-top: 15px;
+	padding: 8px 30px;
+	border: 2px solid #f3dd8d;
+	font-size: 33px;
+	text-transform: uppercase;
+	color: #f3dd8d;
+
+	&:hover {
+		border-color: #fff;
+		color: #fff;
+	}
+}
+
+img,
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+
+// ==========================================================================
+// Social Media Section
+// ==========================================================================
+
+.social-links {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 0 40px;
+	padding: 0;
+	list-style-type: none;
+
+	li {
+		margin: 0 10px;
+	}
+
+	a {
+		display: block;
+		position: relative;
+		overflow: hidden;
+
+		svg {
+			fill: #fff;
+			transition: all ease 0.2s;
+		}
+
+		&:hover {
+			svg {
+				fill: #f3dd8d;
+			}
+		}
+
+		span {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-indent: -1000px;
+		}
+	}
+}
