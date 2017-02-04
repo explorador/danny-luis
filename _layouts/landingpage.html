@@ -25,13 +25,13 @@
 
 					<p><strong>Sign up</strong> for his email newsletter to receive a <strong>FREE digital download</strong> of his new single when it releases.</p>
 
-					<a href="#" class="btn">Sign Up</a>
+					<a id="open-popup" href="#" class="btn">Sign Up</a>
 				</div><!-- /.black-box -->
 
 				<ul class="social-links">
 					{% if site.facebook_url %}
 					<li>
-						<a href="{{ site.facebook_url }}">
+						<a target="_blank" href="{{ site.facebook_url }}">
 							<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="M14.62 0c-2.032 0-3.936.38-5.714 1.143-1.777.76-3.325 1.806-4.643 3.134-1.32 1.328-2.36 2.876-3.12 4.644C.38 10.69 0 12.59 0 14.62c0 2.01.38 3.905 1.143 5.683.76 1.777 1.8 3.325 3.12 4.643 1.318 1.32 2.866 2.364 4.643 3.135 1.778.773 3.682 1.158 5.713 1.158 2.01 0 3.905-.385 5.683-1.157 1.777-.77 3.325-1.815 4.643-3.134 1.32-1.318 2.364-2.866 3.135-4.643.773-1.778 1.158-3.672 1.158-5.684 0-2.032-.385-3.932-1.157-5.7-.77-1.767-1.815-3.315-3.134-4.643-1.318-1.328-2.866-2.373-4.643-3.134C18.525.38 16.63 0 14.62 0zm3.456 10.107H15.88c-.138 0-.265.074-.382.22-.117.147-.176.337-.176.57v1.583h2.754v2.256h-2.754v6.797h-2.607v-6.797H10.37V12.48h2.345v-1.318c0-.957.298-1.777.893-2.46.596-.684 1.353-1.026 2.27-1.026h2.198v2.43z" fill-rule="evenodd"/></svg>
 							<span>Facebook</span>
 						</a>
@@ -39,7 +39,7 @@
 					{% endif %}
 					{% if site.twitter_url %}
 					<li>
-						<a href="{{ site.twitter_url }}">
+						<a target="_blank" href="{{ site.twitter_url }}">
 							<svg width="30" height="30" viewBox="50 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="M64.62 0c-2.032 0-3.932.38-5.7 1.143-1.767.76-3.315 1.806-4.643 3.134-1.328 1.328-2.373 2.876-3.134 4.644C50.38 10.69 50 12.59 50 14.62c0 2.01.38 3.905 1.143 5.683.76 1.777 1.806 3.325 3.134 4.643 1.328 1.32 2.876 2.364 4.644 3.135 1.768.773 3.668 1.158 5.7 1.158 2.01 0 3.905-.385 5.683-1.157 1.777-.77 3.325-1.815 4.643-3.134 1.32-1.318 2.364-2.866 3.135-4.643.773-1.778 1.158-3.672 1.158-5.684 0-2.032-.385-3.932-1.157-5.7-.77-1.767-1.815-3.315-3.134-4.643-1.318-1.328-2.866-2.373-4.643-3.134C68.525.38 66.63 0 64.62 0zm5.946 11.953v.381c0 .957-.175 1.924-.527 2.9-.353.977-.875 1.856-1.568 2.637-.694.782-1.553 1.422-2.578 1.92-1.026.498-2.203.747-3.53.747-.8 0-1.578-.112-2.33-.337-.752-.224-1.44-.542-2.065-.952.096 0 .204.005.32.015.118.01.235.014.353.014.683 0 1.328-.107 1.933-.322.606-.215 1.153-.517 1.64-.908-.624-.02-1.18-.215-1.67-.586-.487-.37-.83-.84-1.025-1.405.1.02.192.03.28.03h.278c.137 0 .27-.006.396-.016.127-.01.25-.035.366-.074-.664-.137-1.216-.47-1.655-.996-.44-.527-.66-1.133-.66-1.816v-.06c.196.118.4.206.616.265.215.057.44.096.674.116-.37-.274-.673-.62-.908-1.04-.234-.42-.35-.874-.35-1.362 0-.274.033-.533.1-.777.07-.244.162-.473.28-.688.703.878 1.567 1.586 2.592 2.123 1.026.537 2.144.835 3.355.893-.04-.097-.064-.2-.073-.307-.01-.11-.015-.22-.015-.338 0-.8.283-1.485.85-2.05.566-.567 1.24-.85 2.02-.85.43 0 .826.082 1.188.248.36.166.668.386.922.66.332-.06.65-.147.953-.264.302-.117.6-.254.893-.41-.116.332-.282.634-.497.908-.215.273-.478.498-.79.674.292-.04.58-.098.863-.176.283-.078.552-.166.806-.264-.195.274-.415.537-.66.79-.243.255-.502.48-.776.675z" fill-rule="evenodd"/></svg>
 							<span>Twitter</span>
 						</a>
@@ -47,7 +47,7 @@
 					{% endif %}
 					{% if site.instagram_url %}
 					<li>
-						<a href="{{ site.instagram_url }}">
+						<a target="_blank" href="{{ site.instagram_url }}">
 							<svg width="30" height="30" viewBox="99 0 30 30" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="M114 2.707c4.004 0 4.478.015 6.06.087 1.46.067 2.255.31 2.784.516.7.272 1.2.597 1.724 1.122.525.525.85 1.024 1.122 1.724.205.53.45 1.323.516 2.785.072 1.582.087 2.056.087 6.06s-.015 4.478-.087 6.06c-.067 1.46-.31 2.255-.516 2.784-.272.7-.597 1.2-1.122 1.724-.525.525-1.024.85-1.724 1.122-.53.205-1.323.45-2.785.516-1.582.072-2.056.087-6.06.087s-4.478-.015-6.06-.087c-1.46-.067-2.255-.31-2.784-.516-.7-.272-1.2-.597-1.724-1.122-.525-.525-.85-1.024-1.122-1.724-.205-.53-.45-1.323-.516-2.785-.072-1.582-.087-2.056-.087-6.06s.015-4.478.087-6.06c.067-1.46.31-2.255.516-2.784.272-.7.597-1.2 1.122-1.724.525-.525 1.024-.85 1.724-1.122.53-.205 1.323-.45 2.785-.516 1.582-.072 2.056-.087 6.06-.087m0-2.702c-4.072 0-4.583.017-6.182.09-1.597.073-2.687.326-3.64.697-.987.383-1.823.896-2.656 1.73-.834.833-1.347 1.67-1.73 2.656-.37.953-.624 2.043-.697 3.64-.073 1.6-.09 2.11-.09 6.182 0 4.073.017 4.583.09 6.183.073 1.596.326 2.686.697 3.64.383.986.896 1.822 1.73 2.655.833.834 1.67 1.347 2.656 1.73.953.37 2.043.624 3.64.697 1.6.073 2.11.09 6.182.09 4.073 0 4.583-.017 6.183-.09 1.596-.073 2.686-.326 3.64-.697.986-.383 1.822-.896 2.655-1.73.834-.833 1.347-1.67 1.73-2.655.37-.954.624-2.044.697-3.64.073-1.6.09-2.11.09-6.183 0-4.072-.017-4.583-.09-6.182-.073-1.597-.326-2.687-.697-3.64-.383-.987-.896-1.823-1.73-2.656-.833-.834-1.67-1.347-2.655-1.73-.954-.37-2.044-.624-3.64-.697-1.6-.073-2.11-.09-6.183-.09"/><path d="M114 7.3c-4.253 0-7.7 3.447-7.7 7.7s3.447 7.7 7.7 7.7 7.7-3.447 7.7-7.7-3.447-7.7-7.7-7.7zm0 12.698c-2.76 0-4.998-2.237-4.998-4.998 0-2.76 2.237-4.998 4.998-4.998 2.76 0 4.998 2.237 4.998 4.998 0 2.76-2.237 4.998-4.998 4.998zM123.804 6.995c0 .994-.806 1.8-1.8 1.8-.993 0-1.8-.806-1.8-1.8 0-.993.807-1.8 1.8-1.8.994 0 1.8.807 1.8 1.8"/></g></svg>
 							<span>Instagram</span>
 						</a>
@@ -55,7 +55,7 @@
 					{% endif %}
 					{% if site.email %}
 					<li>
-						<a href="mailto:{{ site.email }}">
+						<a target="_blank" href="mailto:{{ site.email }}">
 							<svg width="30" height="24" viewBox="149 3 30 24" xmlns="http://www.w3.org/2000/svg"><path d="M179 10.6v13.293c0 .736-.262 1.367-.787 1.892-.524.524-1.155.786-1.892.786h-24.64c-.738 0-1.37-.26-1.893-.785-.525-.525-.787-1.156-.787-1.892V10.6c.49.547 1.055 1.033 1.69 1.457 4.04 2.745 6.814 4.67 8.32 5.776.637.468 1.154.834 1.55 1.096.396.26.923.53 1.582.803.658.273 1.272.41 1.84.41h.035c.57 0 1.183-.137 1.84-.41.66-.274 1.187-.542 1.583-.804.396-.263.913-.63 1.55-1.097 1.896-1.373 4.675-3.298 8.336-5.776.636-.435 1.194-.92 1.674-1.457zm0-4.92c0 .88-.273 1.723-.82 2.526-.547.804-1.228 1.49-2.043 2.06l-7.835 5.44-.71.51c-.364.263-.665.475-.905.637-.24.162-.53.343-.87.544-.34.2-.662.352-.963.452-.302.1-.58.15-.837.15h-.034c-.256 0-.535-.05-.837-.15-.3-.1-.622-.252-.962-.453-.34-.2-.63-.382-.87-.544-.24-.162-.542-.374-.905-.636-.364-.262-.6-.432-.712-.51-1.016-.715-2.478-1.733-4.387-3.056-1.907-1.32-3.05-2.117-3.43-2.384-.692-.47-1.345-1.114-1.96-1.934-.613-.82-.92-1.582-.92-2.285 0-.87.232-1.596.695-2.176.463-.58 1.124-.87 1.984-.87h24.64c.727 0 1.355.262 1.885.787.53.524.795 1.155.795 1.892z" fill-rule="evenodd"/></svg>
 							<span>Email</span>
 						</a>
@@ -64,37 +64,67 @@
 				</ul><!-- /.social-links -->
 			</div><!-- /.inner-container -->
 		</div><!-- /.container -->
+
+		<div class="signup-popup-wrapper signup-popup-element animated fadeIn"></div><!-- /.signup-popup-wrapper -->
+			<div class="signup-popup signup-popup-element animated fadeIn">
+
+				<a class="close-lightbox" href="#">
+					<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="M15 .725c1.95 0 3.817.38 5.6 1.138 1.783.758 3.32 1.783 4.612 3.075 1.292 1.29 2.317 2.83 3.076 4.612.758 1.783 1.137 3.65 1.137 5.6 0 1.95-.38 3.817-1.137 5.6-.76 1.783-1.784 3.32-3.076 4.613-1.29 1.29-2.83 2.316-4.612 3.075-1.783.758-3.65 1.137-5.6 1.137-1.95 0-3.817-.38-5.6-1.137-1.783-.76-3.32-1.784-4.613-3.075-1.29-1.292-2.316-2.83-3.075-4.613C.954 18.967.575 17.1.575 15.15c0-1.95.38-3.817 1.137-5.6.76-1.783 1.784-3.32 3.075-4.613C6.08 3.647 7.617 2.622 9.4 1.862 11.183 1.104 13.05.725 15 .725zm0 3.75c-1.933 0-3.72.475-5.363 1.425-1.64.95-2.937 2.246-3.887 3.887-.95 1.642-1.425 3.43-1.425 5.363 0 1.933.475 3.72 1.425 5.362.95 1.642 2.246 2.938 3.887 3.888 1.642.95 3.43 1.425 5.363 1.425 1.933 0 3.72-.475 5.363-1.425 1.64-.95 2.937-2.246 3.887-3.887.95-1.642 1.425-3.43 1.425-5.363 0-1.933-.475-3.72-1.425-5.363-.95-1.64-2.246-2.937-3.887-3.887-1.642-.95-3.43-1.425-5.363-1.425zm3.975 5.1l1.6 1.6c.117.117.175.262.175.438 0 .175-.058.32-.175.437l-3.1 3.1 3.1 3.1c.117.117.175.262.175.438 0 .175-.058.32-.175.437l-1.6 1.6c-.117.117-.263.175-.438.175-.174 0-.32-.058-.437-.175l-3.1-3.1-3.1 3.1c-.117.117-.263.175-.438.175s-.32-.058-.437-.175l-1.6-1.6c-.117-.117-.175-.262-.175-.438 0-.175.058-.32.175-.437l3.1-3.1-3.1-3.1c-.117-.117-.175-.263-.175-.438s.058-.32.175-.437l1.6-1.6c.117-.117.262-.175.438-.175.175 0 .32.058.437.175l3.1 3.1 3.1-3.1c.117-.117.262-.175.438-.175.174 0 .32.058.437.175z" id="Shape" fill="#FFF" fill-rule="evenodd"/></svg>
+					<span>Close</span>
+				</a>
+
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="//dannyluismusic.us15.list-manage.com/subscribe/post?u=80799a1787028c588cefba4d4&amp;id=5b0a4f6f61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<h2>Subscribe to my mailing list</h2>
+							<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+							<div class="mc-field-group">
+								<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+								</label>
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+								</label>
+								<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+								</label>
+								<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_80799a1787028c588cefba4d4_5b0a4f6f61" tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</div>
+					</form>
+				</div>
+				<!--End mc_embed_signup-->
+			</div><!-- /.signup-popup -->
 	</main>
 
-	<script type="text/javascript">
-		anime({
-			targets: '#svg-site-logo',
-			pathOpacityAnim: false,
-				// If true, all the layers/paths of each letter part (except the last one) will animate the opacity to 0.
-			// With this, we avoid any overlapping path behind the last one to be shown.
-			inAnimation: {
-				properties: {
-					translateY: {
-						value: [-30, 0],
-						duration: 900,
-						elasticity: 600,
-						easing: 'easeOutElastic'
-					},
-					opacity: {
-						value: [0, 1],
-						duration: 500,
-						easing: 'linear'
-					},
-				},
-			pathAnimation: {
-				duration: 800,
-				easing: 'easeOutQuint',
-				delay: 200 // delay increment per path.
-			},
-		},
-	});
-</script>
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$("#open-popup").on("click", function(){
+				$(".signup-popup-element").addClass("display");
+				$("body").addClass("fixed-body");
+				return false;
+			});
+
+			$(".close-lightbox, .signup-popup-wrapper").on("click", function(){
+				$(".signup-popup-element").removeClass("display");
+				$("body").removeClass("fixed-body");
+				return false;
+			});
+		});
+	</script>
 </body>
 
 </html>
