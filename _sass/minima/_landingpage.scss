@@ -251,6 +251,21 @@ img,
 			}
 		}
 	}
+
+	#mc_embed_signup div#mce-responses {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+
+		#mce-success-response {
+			color: #fff;
+		}
+	}
+
+	#mc_embed_signup div.response {
+		margin: 0 0 15px;
+		padding: 0;
+	}
 }
 
 .close-lightbox {
