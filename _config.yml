@@ -21,6 +21,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_url: https://twitter.com/DannyLuisMusic
 facebook_url: https://www.facebook.com/dannyluismusic/
 instagram_url: http://instagram.com/dannyluismusic
+permalink: pretty
 
 # Build settings
 markdown: kramdown
