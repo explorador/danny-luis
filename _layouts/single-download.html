@@ -61,9 +61,15 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			var browser = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+
 			$(".digital-download").on("click", function(){
-				download(new Blob(), "{{ '/assets/shelter-when-life-is-madness.m4a' | relative_url }}", "text/html");
-				return false;
+				if( browser ) {
+					$(this).attr("href", "{{ '/assets/shelter-when-life-is-madness.m4a' | relative_url }}").attr("target", "_blank");
+				} else {
+					download(new Blob(), "{{ '/assets/shelter-when-life-is-madness.m4a' | relative_url }}", "text/html");
+					return false;
+				};
 			});
 		});
 	</script>
