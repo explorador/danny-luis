@@ -28,9 +28,12 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 html,
 body {
-	height: 100%;
 	background-color: #1f1f1f;
 
 	@media (max-width: $on-palm) {
@@ -49,6 +52,9 @@ body {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	min-height: 100%;
 	background-position: calc(50% + 273px) 50%;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
@@ -119,7 +125,7 @@ body {
 }
 
 .page-content {
-	padding: 0 1.19047619em; //25/21
+	padding: 1.19047619em; //25/21
 	width: 1440px;
 
 	@media (max-width: 1440px) {
@@ -177,7 +183,7 @@ img,
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	margin: 0 0 40px;
+	margin: 0;
 	padding: 0;
 	list-style-type: none;
 
