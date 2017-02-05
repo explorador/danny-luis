@@ -3,8 +3,6 @@
 
 {% include head.html %}
 
-<script type="text/javascript" src="{{ '/assets/download.js' | relative_url }}"></script>
-
 <body class="single-download-template">
 
 	<main class="page-content animated fadeIn" aria-label="Content">
@@ -18,7 +16,7 @@
 				<div class="black-box">
 					<p>You backed <strong>Danny Luis</strong> on <strong>Kickstarter</strong>, Here is your <strong>first</strong> Reward!</p>
 
-					<a href="#" class="btn digital-download">Download Now</a>
+					<a href="{{ '/download/shelter-when-life-is-madness.m4a' | relative_url }}" class="btn digital-download">Download Now</a>
 				</div><!-- /.black-box -->
 
 				<ul class="social-links">
@@ -58,21 +56,6 @@
 			</div><!-- /.inner-container -->
 		</div><!-- /.container -->
 	</main>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var browser = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
-
-			$(".digital-download").on("click", function(){
-				if( browser ) {
-					$(this).attr("href", "{{ '/assets/shelter-when-life-is-madness.m4a' | relative_url }}").attr("target", "_blank");
-				} else {
-					download(new Blob(), "{{ '/assets/shelter-when-life-is-madness.m4a' | relative_url }}", "text/html");
-					return false;
-				};
-			});
-		});
-	</script>
 </body>
 
 </html>
