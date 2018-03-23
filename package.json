@@ -1,29 +1,29 @@
 {
-  "name": "danny-luis",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/explorador/danny-luis.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/explorador/danny-luis/issues"
-  },
-  "homepage": "https://github.com/explorador/danny-luis#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^3.9.1",
-    "gulp-shell": "^0.5.2",
-    "lodash": "^4.17.4",
-    "gulp-sass": "*",
-    "gulp-autoprefixer": "*",
-    "child_process": "*",
-    "gulp-sourcemaps": "*"
-  }
+	"name": "danny-luis",
+	"version": "1.0.0",
+	"description": "Danny Luis website",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/explorador/danny-luis.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/explorador/danny-luis/issues"
+	},
+	"homepage": "https://github.com/explorador/danny-luis#readme",
+	"devDependencies": {
+		"browser-sync": "^2.18.6",
+		"gulp": "^3.9.1",
+		"gulp-shell": "^0.5.2",
+		"lodash": "^4.17.4",
+		"gulp-sass": "*",
+		"gulp-autoprefixer": "*",
+		"child_process": "*",
+		"gulp-sourcemaps": "*"
+	}
 }
