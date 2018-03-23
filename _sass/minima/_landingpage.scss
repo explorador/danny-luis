@@ -115,11 +115,11 @@ body {
 	.site-logo {
 		max-width: 80px;
 		max-height: 128px;
+		opacity: .7;
 
 		@media (max-width: $on-palm) {
 			max-width: 40px;
 			max-height: 65px;
-			opacity: .7;
 		}
 	}
 
@@ -178,7 +178,7 @@ body {
 	svg {
 		max-width: 100%;
 		width: auto;
-		max-height: 60px;
+		max-height: 35px;
 		fill: #fff;
 
 		@media (max-width: $on-palm) {
